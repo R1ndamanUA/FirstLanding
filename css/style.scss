@@ -632,6 +632,7 @@ body {
             & img {
                 max-width: 100%;
                 object-fit: cover;
+                transition: all 0.5s ease 0s;
                 &:hover {
                     scale: 1.05;
                 }
@@ -1020,6 +1021,9 @@ body {
     justify-content: space-between;
     padding-top: 24px;
     padding-bottom: 38px;
+    @media (max-width: 767.98px) {
+        flex-wrap: wrap;
+    }
     &__clear {
         flex: 0 1 33%;
     }
@@ -1030,6 +1034,10 @@ body {
         color: #ffffff;
         flex: 1 1 33%;
         text-align: center;
+        @media (max-width: 767.98px) {
+            flex-wrap: wrap;
+            flex: 1 1 100%;
+        }
     }
 
     &__icon {
@@ -1037,6 +1045,11 @@ body {
         flex: 0 1 33%;
         justify-content: end;
         gap: 24px;
+        @media (max-width: 767.98px) {
+            flex: 1 1 100%;
+            justify-content: center;
+            padding-top: 30px;
+        }
         & a {
             &:hover {
                 scale: 1.3;

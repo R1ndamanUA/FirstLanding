@@ -764,6 +764,7 @@ body.lock {
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.5s ease 0s;
 }
 .room__item a img:hover {
   scale: 1.05;
@@ -1138,6 +1139,11 @@ body.lock {
   padding-top: 24px;
   padding-bottom: 38px;
 }
+@media (max-width: 767.98px) {
+  .social {
+    flex-wrap: wrap;
+  }
+}
 .social__clear {
   flex: 0 1 33%;
 }
@@ -1149,11 +1155,24 @@ body.lock {
   flex: 1 1 33%;
   text-align: center;
 }
+@media (max-width: 767.98px) {
+  .social__copy {
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+  }
+}
 .social__icon {
   display: flex;
   flex: 0 1 33%;
   justify-content: end;
   gap: 24px;
+}
+@media (max-width: 767.98px) {
+  .social__icon {
+    flex: 1 1 100%;
+    justify-content: center;
+    padding-top: 30px;
+  }
 }
 .social__icon a:hover {
   scale: 1.3;
