@@ -501,7 +501,7 @@ body.lock {
   width: 17px;
   display: inline-block;
   color: #fff;
-  background: url(/img/icon/ArrowRight2.svg) no-repeat 0 0;
+  background: url(img/icon/ArrowRight2.svg) no-repeat 0 0;
   position: relative;
   top: 3px;
 }
