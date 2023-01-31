@@ -30,7 +30,7 @@ $(window).scroll(function(){
     $('.showright').css('animation','showright 0.8s ease normal 0s both');
     $('.showright').css('display','block');
   }else{
-    $('.showright').css('display','none');
+    // $('.showright').css('display','none');
   }
 });
 
@@ -42,6 +42,6 @@ $(window).scroll(function(){
     $('.showleft').css('animation','showleft 0.8s ease normal 0.3s both');
     $('.showleft').css('display','block');
   }else{
-    $('.showleft').css('display','none');
+    // $('.showleft').css('display','none');
   }
 });
